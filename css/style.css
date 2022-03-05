@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Sansita+Swashed:wght@700&family=Smooch+Sans:wght@600&display=swap');
+
+body {
+  background: #f6faff;
+}
+
+a{
+  text-decoration: none;
+}
+
+button {
+  transition: all 0.3s ease-out 0s;
+}
+
+div.header-top.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler >.toggler-icon{
+  width: 30px;
+  height: 2px;
+  background-color: #323450;
+  display: block;
+  margin: 5px 0;
+  position: relative;
+  transition: all 10s ease-out os;
+}
+
+.navbar-toggler{
+  padding: 0;
+}
+
+.navbar-toggler:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler.active >.toggler-icon:nth-of-type(1){
+  transform: rotate(45deg);
+  top: 7px;
+}
+.navbar-toggler.active >.toggler-icon:nth-of-type(2){
+  opacity: 0;
+}
+.navbar-toggler.active >.toggler-icon:nth-of-type(3){
+  transform: rotate(-45deg);
+  top: -7px;
+}
+
+.nav-link-custom{
+  color: #373a3a;
+  font-size: 19px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.navbar-brand-custom{
+  color: #4ccdee;
+  font-size: 30px;
+  font-family: 'Smooch Sans', sans-serif;
+}
+
+#hero-name{
+  font-weight: 700;
+  font-family: 'Smooch Sans', sans-serif;
+}
+
+.label-name{
+font-family: 'Anton', sans-serif;
+}
+
+.skill-yellow{
+  background-color: #e9d487;
+  border-radius: 8px;
+  }
+  
+.skill-red{
+  background-color: #f09292;
+  border-radius: 8px;
+  }
+  
+.skill-blue{
+  background-color: #6e9deed0;
+  border-radius: 8px;
+  }
+  
+  #skill{
+    background: #b0acacae;
+    width: 100%;
+    z-index: 0;
+  }
+  
+  .list-none li{
+    list-style: none;
+    margin-left: -20px;
+  }
+  
+  .skill-name{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Bebas Neue', cursive;
+  }
+  
+  .skill-star{
+    color: yellow;
+    font-size: 28px;
+    margin-top: 10px;
+  }
+  
+  #skill-icon-1{
+    font-size: 70px;
+    border: 1px solid #acb4b5cc;
+    background-color: #2f333437;
+    padding: 15px 25px;
+    box-shadow: 0 0 3px 2px #acb4b5cc;
+  }
+  
+  #skill-icon-2{
+    font-size: 70px;
+    border: 1px solid #acb4b5cc;
+    background-color: #2f333437;
+    padding: 15px 25px;
+    box-shadow: 0 0 3px 2px #acb4b5cc;
+  }
+  #skill-icon-3{
+    font-size: 70px;
+    border: 1px solid #acb4b5cc;
+    background-color: #2f333437;
+    padding: 15px 25px;
+    box-shadow: 0 0 3px 2px #acb4b5cc;
+  }
+  
+  .skill-icon{
+    margin-bottom: 20px;
+  }
+  
+
+.button {
+  font-size: 18px;
+  font-weight: 500;
+  box-sizing: border-box;
+  line-height: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #2F80ED;
+  color: #ffffff;
+  border: 1px solid transparent;
+  position: relative;
+  z-index: 1;
+  padding: 0 25px;
+  overflow: hidden;
+  text-decoration: none;
+  border-radius: 7px;
+}
+.button i {
+  padding-left: 20px;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  padding: 50%;
+  border-radius: 50%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  transition: all .4s linear;
+  transform: translate3d(-50%, -50%, 0) scale(0);
+}
+
+.hero-button{
+  height: 38px;
+  background-color: #13b1cc;
+}
+
+.button:hover {
+  color: #ffffff;
+}
+
+.button:hover::before {
+  transform: translate3d(-50%, -50%, 0) scale(1.5);
+}
+
+.button-1{
+  height: 35px;
+  background-color: #17dccc;
+}
+ 
+.button-2{
+  height: 35px;
+  background-color: #eedf24;
+}
+ 
+
+@media (max-width: 767px) {
+  .header-top .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 9;
+    box-shadow: 0px 15px 20px 0px rgba(50, 52, 80, 0.1);
+    padding: 5px 12px;
+  }
+}
