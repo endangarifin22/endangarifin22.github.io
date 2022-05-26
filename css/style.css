@@ -10,8 +10,21 @@ a{
   text-decoration: none;
 }
 
+canvas{
+  display:block;
+  vertical-align:bottom;
+  top: 0;
+  position: absolute;
+}
+
 button {
   transition: all 0.3s ease-out 0s;
+}
+
+.header-top{
+  background-color: #d7eafa;
+  position: relative;
+  z-index: 100;
 }
 
 div.header-top.sticky {
@@ -24,6 +37,13 @@ div.header-top.sticky {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
+#particles-js{
+  background-color: #d7eafa;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
 .navbar-toggler >.toggler-icon{
   width: 30px;
   height: 2px;
@@ -183,6 +203,7 @@ font-family: 'Anton', sans-serif;
 .hero-button{
   height: 38px;
   background-color: #13b1cc;
+  margin-bottom: 20px;
 }
 
 .button:hover {
@@ -214,5 +235,9 @@ font-family: 'Anton', sans-serif;
     z-index: 9;
     box-shadow: 0px 15px 20px 0px rgba(50, 52, 80, 0.1);
     padding: 5px 12px;
+  }
+
+  .hero-text{
+    transform: translateY(5rem) ;
   }
 }
